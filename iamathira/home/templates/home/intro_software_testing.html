@@ -1,0 +1,95 @@
+{% extends 'base1.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    {% block content1 %}
+    <title>Software intro</title>
+    {% endblock %}
+
+</head>
+<body>
+{% block content2 %}
+<div class="container">
+    <h1><center>Introduction to software testing</center></h1>
+<br>
+<h3>Software testing</h3>
+<p> Software testing is the process of verifying the functionality of an application against the requirement to identify or
+    catch defects in the software.
+    Software testing is categorized into three software testing method:
+    <br>
+    <br>
+    <b>Black box testing</b>: Testing the application against the requirement without looking into the internal code, structure and design. Here, tester look into the requirement then test each and every component thoroughly against the application.
+    Black box testing is also known as closed box testing, functionality testing and behavioural testing.
+    <br>
+    <b>White box testing</b>: Testing line of code, internal structure , design and implementation by looking into the source code of the software. Here, we test each and every line of code and ensure that program is working as expected.
+    White box testing is also known as glass box testing, transparent box testing, open box testing, unit testing, structural testing and mutation testing.
+    <br>
+    <b>Grey box testing</b>: It is combination of white box testing and black box testing. Here, testers have limited knowledge on coding as well as internal structure and have knowledge on understanding behaviour of application under test.
+</p>
+
+<h3>Types of software testing</h3>
+<p>
+    <b>Manual testing</b>: Testing the application again and again manually  against the requirement to find the defects is called as manual testing.
+    <br>
+    <b>Automation testing</b>: Test engineer will write a program or script and run it against the application automatically to check the result as pass or fail. This is called automation testing.
+</p>
+
+<h3>Importance of software testing</h3>
+<p>
+    <li>While building a software people could make error or mistake which will lead to failure of software, loss of life, money, time, business, reputation etc. Testing ensures that error or defects are found in the early stages, there by making the software or product more reliable and secure.</li>
+    <li>Well tested product guarantees or ensures the quality of the product.</li>
+    <li>If the defect is found in the earlier stage that is before releasing it to end user then the cost of fixing defects are less. Cost of findng defects and fixing defects increases over time. Hence it is recommended a Thorough testing before releasing any product to end user.</li>
+    <li>By testing we gain confidence on the software there by giving satisfaction to their customers. It ensures the best user experience.</li>
+</p>
+
+<h3>Disadvantages of manual testing</h3>
+<p>
+<li>Manual testing is time consuming</li>
+<li>Manual testing is less reliable as it is conducted by humans and we might end up making unintentional mistake.</li>
+<li>Expensive over automation</li>
+<li>It is tough job as we have to test application or software again and again manually.</li>
+<li>Since we are manually testing it, so the time taken to give the solution to the customer will take time i.e turn around time is more.</li>
+</p>
+
+<h3>Difference between manual and automation testing</h3>
+    <br>
+<table>
+  <tr>
+    <th><center>Manual Testing</center></th>
+    <th><center>Automation Testing</center></th>
+  </tr>
+  <tr>
+    <td>Testing the applcation again and again manually against the requirement</td>
+    <td>Tester will write code or script and run it against the appliaction to check if the result as pass or fail</td>
+  </tr>
+  <tr>
+    <td>Time consuming as we are doing it manually</td>
+    <td>Faster as we are running scripts which will automatically test the application</td>
+  </tr>
+  <tr>
+    <td>We can randomly test the application</td>
+    <td>We can only do guided testing that is scripts have to be written to run the program against application</td>
+  </tr>
+  <tr>
+    <td>It is not accurate as human tends to make error.</td>
+    <td>Results are accurate as we automatically run it</td>
+  </tr>
+  <tr>
+    <td>No prior programming knowledge is required</td>
+    <td>Programming knowledge is must for automation testing to write scripts or program</td>
+  </tr>
+  <tr>
+    <td>Testing again and again is a tedious job</td>
+    <td>Since we are automating the application so repetitive execution gives accurate result</td>
+  </tr>
+</table>
+</div>
+{% endblock %}
+</body>
+</html>
